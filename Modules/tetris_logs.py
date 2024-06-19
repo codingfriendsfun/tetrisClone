@@ -24,7 +24,14 @@ class TetrisLogger:
     def define_log_levels(self):
         """Define the log levels."""
 
-        pass
+        self.levels = {
+                        "INHERIT": logging.NOTSET,
+                        "DEBUG": logging.DEBUG,
+                        "INFO": logging.INFO,
+                        "WARNING": logging.WARNING,
+                        "ERROR": logging.ERROR,
+                        "CRITICAL": logging.CRITICAL
+        }
 
     def get_log_level(self, level):
         """Get the log level for the logger."""
