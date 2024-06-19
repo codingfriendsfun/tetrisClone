@@ -11,10 +11,11 @@ class TetrisLogger:
         self.logger = logging.getLogger(module_name)
         self.level = level
 
-        self.config_logger()
         self.define_log_levels()
 
         self.get_log_level(self.level)
+
+        self.config_logger()
 
     def config_logger(self):
         """Configure the logger output."""
@@ -38,5 +39,5 @@ class TetrisLogger:
     def get_log_level(self, level):
         """Get the log level for the logger."""
 
-        pass
+        self.log_level = self.levels[level]
         
