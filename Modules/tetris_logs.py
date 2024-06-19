@@ -33,6 +33,8 @@ class TetrisLogger:
                         "CRITICAL": logging.CRITICAL
         }
 
+        return self.levels
+
     def get_log_level(self, level):
         """Get the log level for the logger."""
 
