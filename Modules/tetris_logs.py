@@ -3,6 +3,7 @@
 import logging
 from relative_pathing import getRootDir
 
+
 class TetrisLogger:
     """Base logger for tetrisApp"""
 
@@ -10,6 +11,7 @@ class TetrisLogger:
         """Initialize the logger and logging attributes."""
 
         self.logger = logging.getLogger(module_name)
+
         self.level = level
         self.module_name = module_name
 
@@ -37,6 +39,7 @@ class TetrisLogger:
             self.logger.info("Initializing main logger.")
 
         else: 
+            
             self.logger.info(f"Initializing logger for {self.module_name}.")
 
     def define_log_levels(self):
