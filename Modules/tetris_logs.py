@@ -10,6 +10,7 @@ class TetrisLogger:
 
         self.logger = logging.getLogger(module_name)
         self.level = level
+        self.module_name = module_name
 
         self.define_log_levels()
 
@@ -20,7 +21,20 @@ class TetrisLogger:
     def config_logger(self):
         """Configure the logger output."""
 
-        pass
+        if self.module_name == '__main__':
+
+            logging.basicConfig(
+                style='{',
+                format="{asctime} {levelname} - {filename}:{lineno}: {message}",
+                datefmt="%Y-%m-%d %H:%M:%S", 
+                filename=f"", 
+                filemode='w',
+                level=self.log_level)
+            
+            self.logger.info("Initializing main logger.")
+
+        else: 
+            self.logger.info(f"Initializing logger for {self.module_name}.")
 
     def define_log_levels(self):
         """Define the log levels."""
