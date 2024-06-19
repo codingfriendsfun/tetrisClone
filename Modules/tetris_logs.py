@@ -1,6 +1,7 @@
 # logging class for tetrisApp
 
 import logging
+from relative_pathing import getRootDir
 
 class TetrisLogger:
     """Base logger for tetrisApp"""
@@ -21,13 +22,15 @@ class TetrisLogger:
     def config_logger(self):
         """Configure the logger output."""
 
+        root_dir = getRootDir()
+
         if self.module_name == '__main__':
 
             logging.basicConfig(
                 style='{',
                 format="{asctime} {levelname} - {filename}:{lineno}: {message}",
                 datefmt="%Y-%m-%d %H:%M:%S", 
-                filename=f"", 
+                filename=f"{root_dir}/tetrisClone.log", 
                 filemode='w',
                 level=self.log_level)
             
