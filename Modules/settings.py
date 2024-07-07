@@ -14,6 +14,8 @@ class Settings:
         self.bg_color = (0, 0, 0)
         self.bg_img = pygame.image.load("Resources\Bck.png")
 
+        # Any of the below areas may need to be split off into other files
+
         # Area for tetramino settings
 
         # Area for difficulty settings
