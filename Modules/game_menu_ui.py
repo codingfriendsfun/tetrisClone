@@ -22,3 +22,4 @@ class Home_Menu:
 
         # Quit button - exits game to desktop
         self.home_menu.add.button(title="Quit")
+        
