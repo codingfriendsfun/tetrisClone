@@ -2,6 +2,7 @@
 import pygame
 import pygame_menu as pm
 
+
 class Home_Menu:
     """Class for storing game menu information"""
     
