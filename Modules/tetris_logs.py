@@ -10,6 +10,7 @@ class TetrisLogger:
     def __init__(self, module_name, level):
         """Initialize the logger and logging attributes."""
 
+        #Create instance of logging, imported above, with the module name.
         self.logger = logging.getLogger(module_name)
 
         self.level = level
@@ -26,8 +27,10 @@ class TetrisLogger:
 
         root_dir = getRootDir()
 
+        #If the main file is running the logger.
         if self.module_name == '__main__':
 
+            #Format our logging output and how/where it's recorded.
             logging.basicConfig(
                 style='{',
                 format="{asctime} {levelname} - {filename}:{lineno}: {message}",
@@ -36,15 +39,19 @@ class TetrisLogger:
                 filemode='w',
                 level=self.log_level)
             
+            #Print the string, with the level 'INFO'
             self.logger.info("Initializing main logger.")
 
+        #If another module is using the logger.
         else: 
             
+            #Print the string, with the level 'INFO'
             self.logger.info(f"Initializing logger for {self.module_name}.")
 
     def define_log_levels(self):
         """Define the log levels."""
 
+        #Dictionary of log levels, used when creating instances of TetrisLogger
         self.levels = {
                         "INHERIT": logging.NOTSET,
                         "DEBUG": logging.DEBUG,
