@@ -2,12 +2,17 @@
 import pygame
 import pygame_menu as pm
 
+from tetris_logs import TetrisLogger
+
 
 class Home_Menu:
     """Class for storing game menu information"""
     
     def __init__(self):
         """Initialize menu"""
+        # Initialize logging
+        self.logs = TetrisLogger('__name__')
+
         # Theme/font to be adjusted later when both are finalized
         self.home_menu = pm.Menu("TetrisClone", 400, 300, 
                                      theme=pm.themes.THEME_DEFAULT)
