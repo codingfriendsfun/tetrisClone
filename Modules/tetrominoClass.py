@@ -23,4 +23,68 @@ class Tetromino:
     def check_collisions():
         """Check to see if tetromino has hit another tetromino or bottom of screen"""
         pass
+
+
+class I_block(Tetromino):
+    """Class to store shape and color for I-shaped blocks"""
+
+    def __init__(self):
+        """Initialize parent and specific shape"""
+        super().__init__()
+
+        # self.image = ADD WHEN .BMP
+
+
+class J_block(Tetromino):
+    """Class to store shape and color for J-shaped blocks"""
+    def __init__(self):
+        """Initialize parent and specific shape"""
+        super().__init__()
+
+        # self.image = ADD WHEN .BMP
+
+
+class L_block(Tetromino):
+    """Class to store shape and color for L-shaped blocks"""
+    def __init__(self):
+        """Initialize parent and specific shape"""
+        super().__init__()
+
+        # self.image = ADD WHEN .BMP
+
+
+class O_block(Tetromino):
+    """Class to store shape and color for O-shaped blocks"""
+    def __init__(self):
+        """Initialize parent and specific shape"""
+        super().__init__()
+
+        # self.image = ADD WHEN .BMP
+
+
+class S_block(Tetromino):
+    """Class to store shape and color for S-shaped blocks"""
+    def __init__(self):
+        """Initialize parent and specific shape"""
+        super().__init__()
+
+        # self.image = ADD WHEN .BMP
+
+
+class T_block(Tetromino):
+    """Class to store shape and color for T-shaped blocks"""
+    def __init__(self):
+        """Initialize parent and specific shape"""
+        super().__init__()
+
+        # self.image = ADD WHEN .BMP
+
+
+class Z_block(Tetromino):
+    """Class to store shape and color for Z-shaped blocks"""
+    def __init__(self):
+        """Initialize parent and specific shape"""
+        super().__init__()
+
+        # self.image = ADD WHEN .BMP
         
