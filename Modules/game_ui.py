@@ -26,15 +26,14 @@ class GameUI:
 
         #self.pause_menu = Pause_Menu()
         
-        # Define board edges
-        self.board_edge_left = .0425
-        self.board_edge_right = .7275
+        # Define board edges - multiply by self.bg width
+        self.board_edge_left = self.rect.width * .0425
+        self.board_edge_right = self.rect.width * .7275
 
         # Next tetromino edges
-        self.next_tetromino_edges_right
-        self.next_tetromino_edges_left
-        self.next_tetromino_edges_top
-        self.next_tetromino_edges_bottom
+        self.next_tet_top.x, self.next_tet_top.y = (self.rect.width * .755,
+                                                    self.rect.height * .0766)
+
 
         # Game info edges
 
