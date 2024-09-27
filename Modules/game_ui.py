@@ -37,6 +37,9 @@ class GameUI:
                                                           self.rect.height * .2366)
 
         # Game info edges
-
+        self.game_info_top.x, self.game_info_top.y = (self.rect.width * .755,
+                                                    self.rect.height * .255)
+        self.game_info_bottom.x, self.game_info_bottom.y = (self.rect.width * .965,
+                                                          self.rect.height * .4566)
 
         # Control buttons
