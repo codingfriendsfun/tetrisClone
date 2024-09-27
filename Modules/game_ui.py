@@ -21,14 +21,20 @@ class GameUI:
         
         # BG aspect ratio
         self.bg = pygame.transform.scale(self.bg, 
-                                         (self.settings.window_height, 
-                                          self.settings.window_height * .667))
+                                         (self.settings.window_height * .667, 
+                                          self.settings.window_height))
 
         #self.pause_menu = Pause_Menu()
         
         # Define board edges
+        self.board_edge_left = .0425
+        self.board_edge_right = .7275
 
         # Next tetromino edges
+        self.next_tetromino_edges_right
+        self.next_tetromino_edges_left
+        self.next_tetromino_edges_top
+        self.next_tetromino_edges_bottom
 
         # Game info edges
 
