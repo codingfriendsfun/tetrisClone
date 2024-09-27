@@ -33,8 +33,10 @@ class GameUI:
         # Next tetromino edges
         self.next_tet_top.x, self.next_tet_top.y = (self.rect.width * .755,
                                                     self.rect.height * .0766)
-
+        self.next_tet_bottom.x, self.next_tet_bottom.y = (self.rect.width * .9625,
+                                                          self.rect.height * .2366)
 
         # Game info edges
+
 
         # Control buttons
